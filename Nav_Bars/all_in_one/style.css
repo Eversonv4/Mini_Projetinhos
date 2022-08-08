@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #24252A;
+}
+
+/*======== PRIMEIRO MODELO ==========*/
+
+li, a, button, h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.header-m1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	border: 1px solid #0088a9;
+}
+
+header .logo-1 {
+	width: 90px;
+	height: 100%;
+	cursor: pointer;
+}
+
+header .nav_links {
+	list-style: none;
+}
+
+header .nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+header .nav_links li a {
+	transition: all 0.3s ease 0s;
+}
+
+header .nav_links li a:hover {
+	color: #0088a9;
+}
+
+.btn-1 {
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+}
+
+h1:hover {
+	color: #0088a9;
+	text-decoration: underline;
+	transition: 0.5s;
+	text-shadow: 2px 2px 2px #fff;
+}
+/*===================================*/
+
+/*======== SEGUNDO MODELO ==========*/
+
+.header-m2 {
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	padding: 30px 10%;
+	border: 1px solid #2e00ff;
+}
+
+.header-m2 .logo-2 {
+	width: 90px;
+	height: 100%;
+	cursor: pointer;
+	margin-right: auto;
+}
+
+.btn-2 {
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+/*===================================*/
+
+/*======== TERCEIRO MODELO ==========*/
+
+.header-m3 {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 30px 10%;
+	border: 1px solid #0088a9;
+}
+
+.header-m3 .logo-3 {
+	width: 90px;
+	height: 100%;
+	cursor: pointer;
+	order: 3;
+	margin-left: auto;
+}
+
+.nav-3 {
+	order: 1;
+}
+
+.nav-3 li:nth-child(1) {
+	padding: 0 20px 0 0;
+}
+
+.cta-3 {
+	order: 2;
+}
+
+.btn-3 {
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+/*===================================*/
