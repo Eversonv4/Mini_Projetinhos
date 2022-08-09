@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9cbcb;
+}
+
+#check {
+  display: none;
+}
+
+#icone {
+  cursor: pointer;
+  padding: 15px 15px 0px 15px;
+  position: absolute;
+  z-index: 2;
+  color: #999;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.icone-ex {
+  display: none;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.barra {
+  background-color: #333;
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  transition: all 0.2s linear;
+  left: -300px;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+}
+
+nav a {
+  text-transform: none;
+  text-decoration: none;
+}
+
+.link {
+  background-color: #494950;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  transition: all 0.4s linear;
+  color: #f4f4f9;
+  border-bottom: 3px solid #222;
+}
+
+.link:hover {
+  background-color: #050542;
+}
+
+.bg-cinza {
+  width: 0;
+  height: 100%;
+  background-color: #70f8ff77;
+  transition: all 0.4s linear;
+  z-index: 1;
+}
+
+#check:checked ~ .screen-menu .barra {
+  transform: translateX(300px);
+}
+#check:checked ~ .screen-menu .bg-cinza {
+  width: 100%;
+}
+#check:checked ~ .icone-menu {
+  display: none;
+}
+#check:checked ~ .icone-ex {
+  display: inherit;
+}
