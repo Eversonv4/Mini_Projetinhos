@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #bedfe8;
+}
+.acordeon {
+  width: 800px;
+}
+.acordeon .contentBox {
+  position: relative;
+  margin: 10px 20px;
+}
+.acordeon .contentBox .label {
+  position: relative;
+  padding: 10px;
+  background: #2694af;
+  color: #fff;
+  cursor: pointer;
+}
+
+.acordeon .contentBox .label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.acordeon .contentBox.active .label::before {
+  content: '-';
+}
+
+.acordeon .contentBox .content {
+  position: relative;
+  padding: 0 10px;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.acordeon .contentBox.active .content {
+  height: 150px;
+  padding: 10px;
+}
