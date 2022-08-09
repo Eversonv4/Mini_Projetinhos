@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sending form</title>
+    <style>
+      input,
+      textarea {
+        display: block;
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 5px;
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ferramenta dos Deuses: formsubmit.co -->
+    <!-- Na primeira vez que usar essa ferramenta, terá ativar ela no meu email -->
+    <form action="https://formsubmit.co/eversonv4@gmail.com" method="POST">
+      <!-- campos especiais (são opcionais) -->
+      <input
+        type="hidden"
+        name="_next"
+        value="https://eversonv4.github.io/form-submit/sucesso.html"
+      />
+      <inpyt
+        type="hidden"
+        name="_cc"
+        value="OutroEmailQueQueiraReceberARespostaDoForm@gmail.com"
+      />
+      <input
+        type="hidden"
+        name="_autoresponse"
+        value="Obrigado por sua mensagem, até mais!"
+      />
+
+      <!-- desabilitando o Captcha -->
+      <!-- <input type="hidden" name="_captcha" value="false" /> -->
+
+      <!-- campos que aparecerão na página -->
+      <input type="text" name="name" placeholder="Nome" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="text" name="subject" placeholder="Assunto" />
+      <textarea name="message" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
