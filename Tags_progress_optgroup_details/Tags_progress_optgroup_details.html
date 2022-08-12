@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      select {
+        margin-left: 15rem;
+      }
+      summary {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Downloading File...</h2>
+    <label for="file">Progress:</label>
+    <progress id="file" value="80" max="100">80%</progress>
+    <label for="input_range">Range</label>
+    <input id="input_range" type="range" min="0" max="10" step="2" />
+    <hr />
+    <select name="files" id="files">
+      <optgroup label="Files">
+        <option value="file1.txt">arquivo1.txt</option>
+        <option value="file2.txt">arquivo2.txt</option>
+        <option value="file3.txt">arquivo3.txt</option>
+      </optgroup>
+      <optgroup label="Images">
+        <option value="image1.jpg">image1.jpg</option>
+        <option value="image2.jpg">image2.jpg</option>
+        <option value="image3.jpg">image3.jpg</option>
+      </optgroup>
+      <optgroup label="ranges">
+        <option value="20">20%</option>
+        <option value="40">40%</option>
+        <option value="60">60%</option>
+        <option value="80">80%</option>
+      </optgroup>
+    </select>
+    <hr />
+    <details>
+      <summary>O que é HTML? (clique aqui)</summary>
+      <p>HTML é uma linguagem de marcação de dados.</p>
+    </details>
+    <script>
+      const selectOutput = document.getElementById("file");
+      const files = document.getElementById("files");
+      files.addEventListener("change", function () {
+        selectOutput.value = files.value;
+      });
+    </script>
+  </body>
+</html>
