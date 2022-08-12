@@ -1,0 +1,58 @@
+div {
+  position: relative;
+  margin: 20px 0;
+  left: 30px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background: lightblue;
+  padding: 10px;
+  transition: ease 0.5s;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+}
+
+div > p {
+  display: none;
+}
+
+div::after {
+  /*
+  content: "i";
+  top: -11px;
+  left: -1px;
+  padding: 23px;
+  */
+  position: absolute;
+  z-index: 99;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: ease 0.5s;
+
+  content: url("./nice_pic.png");
+  top: 0;
+  left: 0;
+}
+
+div:hover {
+  width: 200px;
+  height: 140px;
+  transition: ease 0.5s;
+  border-radius: 20px;
+  /* background-color: #00ff80; */
+
+  background-color: black;
+  color: white;
+}
+
+div:hover > p {
+  display: block;
+}
+
+div:hover::after {
+  transition: ease 0.5s;
+  display: none;
+  background-color: transparent;
+}

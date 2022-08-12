@@ -1,0 +1,46 @@
+body {
+  background-color: #dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
+.inner {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 13%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.inner:hover {
+  clip-path: circle(75%);
+  background-color: #00b6ff;
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner span:hover {
+  color: white;
+}
+
+h1 {
+  color: #002a85;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  font-size: 0.8rem;
+}
