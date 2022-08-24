@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <span id="rangeValue">0</span>
+      <input class="input_range" type="range" value="0" min="0" max="100" />
+
+      <div style="margin-top: 140px; display: flex; align-items: center">
+        <label>Option 1</label>
+        <input class="input_radio" type="radio" name="range" value="0" />
+        <label>Option 2</label>
+        <input class="input_radio" type="radio" name="range" value="1" />
+      </div>
+    </section>
+    <script>
+      const InputRange = document.querySelector(".input_range");
+      const TextRangeValue = document.querySelector("#rangeValue");
+      InputRange.addEventListener("change", (e) => {
+        TextRangeValue.innerHTML = e.target.value;
+      });
+      InputRange.addEventListener("mousemove", (e) => {
+        TextRangeValue.innerHTML = e.target.value;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: jessiquinha;
+  src: url(../fonts/pixelart3.TTF);
+}
+
+* {
+  font-family: jessiquinha;
+}
